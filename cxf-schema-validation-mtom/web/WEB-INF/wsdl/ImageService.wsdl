@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+    xmlns:tns="http://redhat.com/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xmime="http://www.w3.org/2005/05/xmlmime"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    targetNamespace="http://redhat.com/"
+    name="ImageServiceService">
+    <types>
+      <xsd:schema targetNamespace="http://redhat.com/"
+        xmlns:tns="http://redhat.com/">
+
+        <xsd:element name="image" type="xsd:base64Binary" xmime:expectedContentTypes="image/jpeg"/>
+        <xsd:element name="imageResponse" type="xsd:base64Binary" xmime:expectedContentTypes="image/jpeg"/>
+
+    </xsd:schema>
+    </types>
+    <message name="resizeImage">
+        <part name="jpeg" element="tns:image"/>
+    </message>
+    <message name="resizeImageResponse">
+        <part name="jpeg" element="tns:imageResponse"/>
+    </message>
+    <portType name="ImageService">
+        <operation name="resizeImage">
+            <input message="tns:resizeImage"/>
+            <output message="tns:resizeImageResponse"/>
+        </operation>
+    </portType>
+    <binding name="ImageServicePortBinding" type="tns:ImageService">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <operation name="resizeImage">
+            <soap:operation soapAction="http://redhat.com/:resizeImage"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="ImageService">
+        <port name="ImageServicePort" binding="tns:ImageServicePortBinding">
+            <soap:address location="http://localhost:9090/mtomSchemaValidation"/>
+        </port>
+    </service>
+</definitions>

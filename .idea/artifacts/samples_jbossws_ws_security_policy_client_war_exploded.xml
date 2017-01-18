@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="samples-jbossws-ws-security-policy-client:war exploded">
+    <output-path>/VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/client/target/sample-client</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="samples-jbossws-ws-security-policy-client" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="/VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/client/target/sample-client/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="samples-jbossws-ws-security-policy-client/web/Web" />
+    </root>
+  </artifact>
+</component>

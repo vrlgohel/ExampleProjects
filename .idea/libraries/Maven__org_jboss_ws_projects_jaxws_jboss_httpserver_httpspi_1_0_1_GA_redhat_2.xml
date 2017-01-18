@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jboss.ws.projects:jaxws-jboss-httpserver-httpspi:1.0.1.GA-redhat-2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/ws/projects/jaxws-jboss-httpserver-httpspi/1.0.1.GA-redhat-2/jaxws-jboss-httpserver-httpspi-1.0.1.GA-redhat-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/ws/projects/jaxws-jboss-httpserver-httpspi/1.0.1.GA-redhat-2/jaxws-jboss-httpserver-httpspi-1.0.1.GA-redhat-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/ws/projects/jaxws-jboss-httpserver-httpspi/1.0.1.GA-redhat-2/jaxws-jboss-httpserver-httpspi-1.0.1.GA-redhat-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

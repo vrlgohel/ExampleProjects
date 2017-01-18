@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:cnt="http://www.wsdlgetproblem.org/xsd/test/content"
+        targetNamespace="http://www.wsdlgetproblem.org/xsd/test/content"
+        elementFormDefault="qualified" version="1.0.0">
+
+    <include schemaLocation="includedcontent_a.xsd"/>
+    <!--<include schemaLocation="includedcontent_b.xsd"/>-->
+    <include schemaLocation="http://www.wsdlgetproblem.org/xsd/test/content/includedcontent_b.xsd"/> 
+
+</schema>

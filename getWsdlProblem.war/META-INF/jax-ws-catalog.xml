@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <system systemId="helloWorld.wsdl" uri="classpath:/wsdl/helloWorld.wsdl"/>
+    <system systemId="http://www.wsdlgetproblem.org/xsd/test/messages/messages.xsd" uri="./schema/messages/t/messages.xsd"/>
+    <system systemId="http://www.wsdlgetproblem.org/xsd/test/common/common1.xsd" uri="./schema/common/a/common1.xsd"/>
+    <rewriteSystem systemIdStartString="http://www.wsdlgetproblem.org/xsd/test/content/" rewritePrefix="./schema/content/" />
+</catalog>

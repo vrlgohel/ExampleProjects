@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:content="http://www.wsdlgetproblem.org/xsd/test/content"
+        targetNamespace="http://www.wsdlgetproblem.org/xsd/test/common"
+        elementFormDefault="qualified" version="1.0.0">
+
+    <import namespace="http://www.wsdlgetproblem.org/xsd/test/content" schemaLocation="http://www.wsdlgetproblem.org/xsd/test/content/content.xsd" />
+
+    <complexType name="CommonRequestType">
+        <sequence>
+            <element name="request" type="content:SomeRequestType" minOccurs="1" maxOccurs="1"/>
+        </sequence>
+    </complexType>
+
+
+</schema>

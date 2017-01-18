@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mtom-upload:war exploded">
+    <output-path>$USER_HOME$/Downloads/mtom-upload/target/mtom-upload</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="mtom-upload" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/Downloads/mtom-upload/target/mtom-upload/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="mtom-upload/web/Web" />
+    </root>
+  </artifact>
+</component>

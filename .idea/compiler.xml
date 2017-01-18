@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="customDateSerializer-rest" />
+        <module name="cxf-eap-jms-redelivery" />
+        <module name="cxf-jms-redelivery" />
+        <module name="cxf-schema-validation-mtom" />
+        <module name="derivedIssueTokensecurity" />
+        <module name="jboss-wsat-simple" />
+        <module name="mtom-upload" />
+        <module name="samples-jbossws-ws-security-policy-client" />
+        <module name="samples-jbossws-ws-security-policy-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="customDateSerializer-rest" target="1.5" />
+      <module name="cxf-eap-jms-redelivery" target="1.5" />
+      <module name="cxf-header-namespace" target="1.5" />
+      <module name="cxf-jms-redelivery" target="1.5" />
+      <module name="cxf-schema-validation-mtom" target="1.5" />
+      <module name="cxf-simple-frontend-test" target="1.5" />
+      <module name="derivedIssueTokensecurity" target="1.5" />
+      <module name="jboss-wsat-simple" target="1.8" />
+      <module name="mtom-upload" target="1.8" />
+      <module name="samples-jbossws-ws-security-policy" target="1.5" />
+      <module name="samples-jbossws-ws-security-policy-client" target="1.5" />
+      <module name="samples-jbossws-ws-security-policy-service" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

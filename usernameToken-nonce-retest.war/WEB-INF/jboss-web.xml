@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+  <!--<security-domain>java:/jaas/certpolicy</security-domain>-->
+  <context-root>/WS_SIMPLE_WS</context-root>
+</jboss-web>

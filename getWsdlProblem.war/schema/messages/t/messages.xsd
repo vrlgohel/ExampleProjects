@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:msg="http://www.wsdlgetproblem.org/xsd/test/messages"
+        xmlns:common="http://www.wsdlgetproblem.org/xsd/test/common"
+        targetNamespace="http://www.wsdlgetproblem.org/xsd/test/messages"
+        elementFormDefault="qualified" version="1.0.0">
+
+    <import namespace="http://www.wsdlgetproblem.org/xsd/test/common" schemaLocation="http://www.wsdlgetproblem.org/xsd/test/common/common1.xsd" />
+
+    <element name="requestMessage" type="common:CommonRequestType" />
+    <element name="responseMessage" type="string" />
+
+</schema>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="RestaurantServiceATService" targetNamespace="http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<ns1:Policy xmlns:ns1="http://www.w3.org/ns/ws-policy" wsu:Id="MessageCenterPortBinding_postMessages_WSAT_Policy">
+<ns1:ExactlyOne>
+<ns1:All>
+<ns2:ATAlwaysCapability xmlns:ns2="http://schemas.xmlsoap.org/ws/2004/10/wsat" />
+<ns3:ATAssertion xmlns:ns4="http://schemas.xmlsoap.org/ws/2002/12/policy" xmlns:ns3="http://schemas.xmlsoap.org/ws/2004/10/wsat" ns1:Optional="true" ns4:Optional="true" />
+</ns1:All>
+</ns1:ExactlyOne>
+</ns1:Policy>
+<ns5:Policy xmlns:ns5="http://www.w3.org/ns/ws-policy" wsu:Id="MessageCenterPortBinding_getProviderMessages_WSAT_Policy">
+<ns5:ExactlyOne>
+<ns5:All>
+<ns6:ATAlwaysCapability xmlns:ns6="http://schemas.xmlsoap.org/ws/2004/10/wsat" />
+<ns7:ATAssertion xmlns:ns8="http://schemas.xmlsoap.org/ws/2002/12/policy" xmlns:ns7="http://schemas.xmlsoap.org/ws/2004/10/wsat" ns5:Optional="true" ns8:Optional="true" />
+</ns5:All>
+</ns5:ExactlyOne>
+</ns5:Policy>
+<ns9:Policy xmlns:ns9="http://www.w3.org/ns/ws-policy" wsu:Id="MessageCenterPortBinding_markMessagesAsRead_WSAT_Policy">
+<ns9:ExactlyOne>
+<ns9:All>
+<ns10:ATAlwaysCapability xmlns:ns10="http://schemas.xmlsoap.org/ws/2004/10/wsat" />
+<ns11:ATAssertion xmlns:ns12="http://schemas.xmlsoap.org/ws/2002/12/policy" xmlns:ns11="http://schemas.xmlsoap.org/ws/2004/10/wsat" ns9:Optional="true" ns12:Optional="true" />
+</ns9:All>
+</ns9:ExactlyOne>
+</ns9:Policy>
+  <wsdl:types>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant" xmlns:tns="http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="RestaurantException" type="tns:RestaurantException"/>
+  <xsd:complexType name="RestaurantException">
+    <xsd:sequence/>
+  </xsd:complexType>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RestaurantException">
+    <wsdl:part element="tns:RestaurantException" name="RestaurantException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="resetResponse">
+  </wsdl:message>
+  <wsdl:message name="reset">
+  </wsdl:message>
+  <wsdl:message name="makeBookingResponse">
+  </wsdl:message>
+  <wsdl:message name="getBookingCountResponse">
+    <wsdl:part name="return" type="xsd:int">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="makeBooking">
+  </wsdl:message>
+  <wsdl:message name="getBookingCount">
+  </wsdl:message>
+  <wsdl:portType name="RestaurantServiceAT">
+    <wsdl:operation name="getBookingCount">
+    
+      <wsdl:input message="tns:getBookingCount" name="getBookingCount">
+    </wsdl:input>
+      <wsdl:output message="tns:getBookingCountResponse" name="getBookingCountResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reset">
+      <wsdl:input message="tns:reset" name="reset">
+    </wsdl:input>
+      <wsdl:output message="tns:resetResponse" name="resetResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="makeBooking">
+      <wsdl:input message="tns:makeBooking" name="makeBooking">
+    </wsdl:input>
+      <wsdl:output message="tns:makeBookingResponse" name="makeBookingResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:RestaurantException" name="RestaurantException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RestaurantServiceATServiceSoapBinding" type="tns:RestaurantServiceAT">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>    
+    <wsdl:operation name="getBookingCount">
+     <ns13:PolicyReference xmlns:ns13="http://www.w3.org/ns/ws-policy" URI="#MessageCenterPortBinding_postMessages_WSAT_Policy" />
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getBookingCount">
+        <soap:body namespace="http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBookingCountResponse">
+        <soap:body namespace="http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reset">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="reset">
+        <soap:body namespace="http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="resetResponse">
+        <soap:body namespace="http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="makeBooking">
+      <soap:operation soapAction="" style="rpc"/>
+      <ns14:PolicyReference xmlns:ns14="http://www.w3.org/ns/ws-policy" URI="#MessageCenterPortBinding_getProviderMessages_WSAT_Policy" />
+      <wsdl:input name="makeBooking">
+        <soap:body namespace="http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="makeBookingResponse">
+        <soap:body namespace="http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RestaurantException">
+        <soap:fault name="RestaurantException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RestaurantServiceATService">
+    <wsdl:port binding="tns:RestaurantServiceATServiceSoapBinding" name="RestaurantServiceAT">
+      <soap:address location="http://localhost:8080/jboss-as-wsat-simple/RestaurantServiceAT"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

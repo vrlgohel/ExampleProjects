@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jboss-wsat-simple:war">
+    <output-path>$PROJECT_DIR$/../../Softwares/jboss-eap-7.0.0.GA-quickstarts/wsat-simple/target</output-path>
+    <root id="archive" name="jboss-wsat-simple.war">
+      <element id="artifact" artifact-name="jboss-wsat-simple:war exploded" />
+    </root>
+  </artifact>
+</component>

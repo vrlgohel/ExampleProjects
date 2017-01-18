@@ -1,0 +1,16 @@
+Buildfile: /Viral_Data/EAP/ExampleProjects/mtomSchemaValidation.war/build.xml
+
+build:
+     [echo] Running war build scripts : /Viral_Data/EAP/ExampleProjects/mtomSchemaValidation.war/build.xml
+
+war-init:
+   [subant] No sub-builds to iterate on
+     [echo] PROPS: /Viral_Data/EAP/ExampleProjects/mtomSchemaValidation.war/WEB-INF/classes /Viral_Data/EAP/ExampleProjects/mtomSchemaValidation.war/WEB-INF/classes
+    [javac] /Viral_Data/EAP/ExampleProjects/mtomSchemaValidation.war/build.xml:307: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+test:
+     [echo] ${jboss-endorsed-dir}
+     [java] BufferedImage@4b79ac84: type = 5 ColorModel: #pixelBits = 24 numComponents = 3 color space = java.awt.color.ICC_ColorSpace@53941c2f transparency = 1 has alpha = false isAlphaPre = false ByteInterleavedRaster: width = 16 height = 16 #numDataElements 3 dataOff[0] = 2
+
+BUILD SUCCESSFUL
+Total time: 1 second

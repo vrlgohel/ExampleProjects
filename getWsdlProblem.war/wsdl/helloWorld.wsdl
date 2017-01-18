@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="helloWorld"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:msg="http://www.wsdlgetproblem.org/xsd/test/messages"
+                  xmlns:tns="http://www.wsdlgetproblem.org/xsd/test/"
+                  targetNamespace="http://www.wsdlgetproblem.org/xsd/test/">
+
+    <wsdl:types>
+        <xsd:schema>
+            <xsd:import	namespace="http://www.wsdlgetproblem.org/xsd/test/messages" schemaLocation="http://www.wsdlgetproblem.org/xsd/test/messages/messages.xsd" />
+        </xsd:schema>
+    </wsdl:types>
+
+    <wsdl:message name="requestMessage">
+        <wsdl:part element="msg:requestMessage" name="request" />
+    </wsdl:message>
+
+    <wsdl:message name="responseMessage">
+        <wsdl:part element="msg:responseMessage" name="response" />
+    </wsdl:message>
+
+
+    <wsdl:portType name="helloWorld_port">
+        <wsdl:operation name="www.wsdlgetproblem.org">
+            <wsdl:input message="tns:requestMessage" />
+            <wsdl:output message="tns:responseMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:binding name="helloWorld_binding" type="tns:helloWorld_port">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+        <wsdl:operation name="www.wsdlgetproblem.org">
+            <soap:operation soapAction="http://www.wsdlgetproblem.org/xsd/test/requestMessage"/>
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:service name="helloWorldService">
+        <wsdl:port name="helloWorld_port" binding="tns:helloWorld_binding">
+            <soap:address location="REPLACE_WITH_ACTUAL_URL" />
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>

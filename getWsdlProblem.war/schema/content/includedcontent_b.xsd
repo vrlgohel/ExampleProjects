@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:msg="http://www.wsdlgetproblem.org/xsd/test/content"
+        targetNamespace="http://www.wsdlgetproblem.org/xsd/test/content"
+        elementFormDefault="qualified" version="1.0.0">
+
+    <complexType name="SomeRequestType">
+        <sequence>
+            <element name="someRequest" minOccurs="1" maxOccurs="1">
+                <simpleType>
+                    <restriction base="integer">
+                        <minInclusive value="0"/>
+                        <maxInclusive value="9"/>
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>

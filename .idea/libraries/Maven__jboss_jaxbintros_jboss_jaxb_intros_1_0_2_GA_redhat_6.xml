@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: jboss.jaxbintros:jboss-jaxb-intros:1.0.2.GA-redhat-6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/jboss/jaxbintros/jboss-jaxb-intros/1.0.2.GA-redhat-6/jboss-jaxb-intros-1.0.2.GA-redhat-6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/jboss/jaxbintros/jboss-jaxb-intros/1.0.2.GA-redhat-6/jboss-jaxb-intros-1.0.2.GA-redhat-6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/jboss/jaxbintros/jboss-jaxb-intros/1.0.2.GA-redhat-6/jboss-jaxb-intros-1.0.2.GA-redhat-6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

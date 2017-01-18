@@ -1,0 +1,9 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+  <deployment>
+    <dependencies>
+      <module name="org.apache.cxf"/>              
+      <!--<module name="deployment.EJB_SERVICE_LOG_FUSE.jar"/>-->
+    </dependencies>
+  </deployment>
+</jboss-deployment-structure>
+

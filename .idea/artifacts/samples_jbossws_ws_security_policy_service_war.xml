@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="samples-jbossws-ws-security-policy-service:war">
+    <output-path>/VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/service/target</output-path>
+    <root id="archive" name="samples-jbossws-ws-security-policy-service-1.0.war">
+      <element id="artifact" artifact-name="samples-jbossws-ws-security-policy-service:war exploded" />
+    </root>
+  </artifact>
+</component>

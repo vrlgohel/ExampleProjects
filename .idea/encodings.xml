@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cxf-eap-jms-redelivery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Softwares/jboss-eap-7.0.0.GA-quickstarts/wsat-simple" charset="UTF-8" />
+    <file url="file:///VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy" charset="UTF-8" />
+    <file url="file:///VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/client" charset="UTF-8" />
+    <file url="file:///VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/service" charset="UTF-8" />
+  </component>
+</project>

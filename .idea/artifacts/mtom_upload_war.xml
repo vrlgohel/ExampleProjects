@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mtom-upload:war">
+    <output-path>$USER_HOME$/Downloads/mtom-upload/target</output-path>
+    <root id="archive" name="mtom-upload.war">
+      <element id="artifact" artifact-name="mtom-upload:war exploded" />
+    </root>
+  </artifact>
+</component>

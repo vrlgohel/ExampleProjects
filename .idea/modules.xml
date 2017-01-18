@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/customDateSerializer-rest/customDateSerializer-rest.iml" filepath="$PROJECT_DIR$/customDateSerializer-rest/customDateSerializer-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cxf-eap-jms-redelivery/cxf-eap-jms-redelivery.iml" filepath="$PROJECT_DIR$/cxf-eap-jms-redelivery/cxf-eap-jms-redelivery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cxf-jms-redelivery/cxf-jms-redelivery.iml" filepath="$PROJECT_DIR$/cxf-jms-redelivery/cxf-jms-redelivery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cxf-schema-validation-mtom/cxf-schema-validation-mtom.iml" filepath="$PROJECT_DIR$/cxf-schema-validation-mtom/cxf-schema-validation-mtom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/derivedIssueTokensecurity/derivedIssueTokensecurity.iml" filepath="$PROJECT_DIR$/derivedIssueTokensecurity/derivedIssueTokensecurity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Softwares/jboss-eap-7.0.0.GA-quickstarts/wsat-simple/jboss-wsat-simple.iml" filepath="$PROJECT_DIR$/../../Softwares/jboss-eap-7.0.0.GA-quickstarts/wsat-simple/jboss-wsat-simple.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/mtom-upload/mtom-upload.iml" filepath="$USER_HOME$/Downloads/mtom-upload/mtom-upload.iml" />
+      <module fileurl="file:///VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/samples-jbossws-ws-security-policy.iml" filepath="/VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/samples-jbossws-ws-security-policy.iml" />
+      <module fileurl="file:///VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/client/samples-jbossws-ws-security-policy-client.iml" filepath="/VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/client/samples-jbossws-ws-security-policy-client.iml" />
+      <module fileurl="file:///VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/service/samples-jbossws-ws-security-policy-service.iml" filepath="/VirtualMachines/Git/jbossws-cxf/examples/samples-jbossws-master/ws-security-policy/service/samples-jbossws-ws-security-policy-service.iml" />
+    </modules>
+  </component>
+</project>
